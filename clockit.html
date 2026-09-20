@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clock It Radio</title>
+
+    <style>
+{
+box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                radial-gradient(circle at top, #292929 0%, #111 50%, #050505 100%);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 45px 20px 25px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            letter-spacing: 4px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            margin-top: 8px;
+            letter-spacing: 2px;
+        }
+
+        .live {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 18px;
+            background: #e53935;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 18px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .player iframe {
+            max-width: 100%;
+        }
+
+        .chat iframe {
+            width: 100%;
+            height: 500px;
+            border: 0;
+            border-radius: 10px;
+            background: white;
+        }
+
+        footer {
+            color: #777;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        @media(max-width:600px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .box {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>CLOCK IT RADIO</h1>
+
+    <div class="subtitle">
+        MUSIC • RADIO • LIVE
+    </div>
+
+    <div class="live">
+        ● ON AIR
+    </div>
+
+</header>
+
+
+<div class="container">
+
+    <div class="box player">
+
+        <h2>🎧 Listen Live</h2>
+
+        <iframe
+            src="https://www.radiojar.com/widget/radio/r17yw0pv9mpwv/player/"
+            frameborder="0"
+            width="320"
+            height="134"
+            scrolling="no">
+        </iframe>
+
+    </div>
+
+
+    <div class="box chat">
+
+        <h2>💬 Clock It Chat</h2>
+
+        <p>Μπες στην παρέα και μίλα με τους ακροατές.</p>
+
+        <iframe
+            src="https://www.radiojar.com/widget/chat/r17yw0pv9mpwv/"
+            scrolling="no">
+        </iframe>
+
+    </div>
+
+</div>
+
+
+<footer>
+    © 2026 Clock It Radio • Powered by Radiojar
+</footer>
+
+</body>
+</html>
